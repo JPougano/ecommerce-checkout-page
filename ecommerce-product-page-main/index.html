@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/main.css">  
+  <link rel="stylesheet" href="../css/nav.css"> 
+  <link rel="stylesheet" href="../css/showcase.css"> 
+  <link rel="stylesheet" href="../css/checkout.css"> 
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  
+</head>
+<body>
+  <nav class="nav__container">
+    <div class="nav__container___menu">
+      <img src="./images/icon-menu.svg" alt="Menu's icon" class="nav__menu">
+      <img src="./images/logo.svg" alt="Sneakers's logo" class="nav__logo">
+    </div>
+    <div class="drag-menu__container">
+      <img src="./images/icon-close.svg" alt="Close menu icon" class="close__icon">
+      <ul class="menu__list">
+        <li class="menu__list___item">Collections</li>
+        <li class="menu__list___item">Men</li>
+        <li class="menu__list___item">Women</li>
+        <li class="menu__list___item">About</li>
+        <li class="menu__list___item">Contacts</li>
+      </ul>
+    </div>
+    <div class="nav__container___icons">
+      <img src="./images/icon-cart.svg" alt="Cart's logo" class="cart__logo">
+      <img src="./images/image-avatar.png" alt="Avatar image" class="nav__avatar">
+    </div>
+  </nav>
+  <section class="showcase__container">
+    <div class="showcase__images___container">
+      <img src="./images/image-product-1.jpg" alt="product image" class="showcase__image">
+      <div class="showcase__images___thumbnail">
+        <ul class="showcase__thumbnail___list">
+          <li><img class="thumbnail__item thumbnail__activated" src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail's Image"></li>
+          <li><img class="thumbnail__item" src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail's Image"></li>
+          <li><img class="thumbnail__item" src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail's Image"></li>
+          <li><img class="thumbnail__item" src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail's Image"></li>
+        </ul>
+      </div>
+    </div>
+    <h5 class="showcase__lable">sneaker company</h5>
+    <h1 class="showcase__title">Fall Limited Edition Sneakers</h1>
+    <p class="showcase__subtitle">
+      These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.
+    </p>
+  </section>
+  <section class="checkout__container">
+
+    <div class="flex">  
+      <div class="checkout__prices">
+        <p class="actual-price">$125.00</p>
+        <span class="discount">50%</span>
+      </div>
+      <p class="discount-price">$250.00</p>
+    </div>
+    <div class="checkout__cart___container">
+      <div class="cart-amount__container">
+        <img src="./images/icon-minus.svg" alt="Minus icon" class="pm__icon">
+        <p>5</p>
+        <img src="./images/icon-plus.svg" alt="Minus icon" class="pm__icon">
+      </div>
+      <button>
+        <img src="./images/icon-cart -white.svg" alt="Cart Image" class="cart__icon">
+        Add to cart
+      </button>
+    </div>
+  </section>
+
+  
+
+</body>
+</html>

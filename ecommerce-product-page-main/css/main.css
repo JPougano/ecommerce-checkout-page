@@ -1,0 +1,19 @@
+:root{
+    --orange:hsl(26, 100%, 55%);
+    --pale-oragen: hsl(25, 100%, 94%);
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-blue: hsl(223, 64%, 98%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --dark-greyish-blue: hsl(219, 9%, 45%);
+    --very-dark-blue: hsl(220, 13%, 13%);
+    --default-padding: 1rem;
+    --section-padding: 0 1rem;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Kumbh Sans,sans-serif;
+    list-style: none;
+}
