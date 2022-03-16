@@ -1,0 +1,143 @@
+@import url("../css/main.css");
+
+.checkout__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--section-padding);
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 450px) {
+    .checkout__container{
+        max-width: 400px;
+        margin: 1rem  auto;
+        padding: 0 1rem;
+    }
+}
+
+
+.checkout__lable{
+    text-transform: uppercase;
+    color: var(--orange);
+}
+
+.checkout__title{
+    margin: 1rem 0;
+    font-size: 30px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 800px){
+    .flex{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+        padding: 1rem 0;
+    }
+}
+
+.checkout__subtitle{
+    text-align: initial;
+    font-size: 16px;
+    color: var(--dark-greyish-blue);
+    line-height: 1.5rem;
+}
+
+.checkout__prices{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.actual-price{
+    font-weight: 700;
+}
+
+.discount{
+    font-size: .8rem;
+    font-weight: 600;
+    background-color: var(--pale-oragen);
+    color: var(--orange);
+    padding: .2rem;
+    border-radius: 2px;
+}
+
+.discount-price{
+    font-size: .8rem;
+    color: var(--dark-greyish-blue);
+    text-decoration: line-through;
+    justify-self: flex-end;
+}
+
+.cart-amount__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(100% - var(--default-padding));
+    padding: .5rem;
+    margin: 1rem 0;
+    background-color: var(--light-grayish-blue);
+    border-radius: 10px;
+}
+
+.pm__icon:hover{
+    cursor: pointer;
+}
+
+.pm__icon:active{
+    width: 15px;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: .5rem 0;
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 10px;
+}
+
+button:hover{
+    box-shadow: 0 0 2em var(--orange);
+
+}
+
+.cart__icon{
+    width: 16px;
+}
+
+@media screen and (min-width: 800px){
+    .checkout__cart___container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .cart-amount__container{
+        height: 25px;
+        width: 100px;
+    }
+
+    button{
+        height: 40px;
+        width: 200px;
+    }
+}
+
+
