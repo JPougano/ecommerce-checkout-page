@@ -89,6 +89,21 @@
     }
 }
 
+.cart__amout{
+    position: relative;
+    top: 10px;
+    left: 60px;
+    width: 20px;
+    text-align: center;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 50%;
+}
+
+.cart__qty___gone{
+    display: none;
+}
+
 .nav__avatar{
     width: 50px;
 }
@@ -96,4 +111,60 @@
 .nav__avatar:hover{
     border: 2px solid var(--orange);
     border-radius: 100%;
+}
+
+
+.nav__logo::before{
+    content: "Ola";
+    
+}
+
+.nav__checkout__dropdown{
+    width: 85%;
+    position: absolute;
+    top: 90px;
+    background-color: var(--white);
+    box-shadow: 0 0 2em var(--dark-greyish-blue);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.dropdown__hidden{
+    display: none;
+}
+
+.dropdown__empty___cart{
+    text-align: center;
+    height: 50px;
+    margin-top: 2.5rem;
+}
+
+.dropdown__menu___title{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.dropdown__menu___img{
+    width: 40px;
+    border-radius: 5px;
+}
+
+.dropdown__menu___content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.dropdown__menu___delete{
+    width: 20px;
+    height: 30px;
+}
+
+.dropdown__menu___button{
+    margin-top: 1rem;
+}
+
+.dropdown__destaque{
+    font-weight: 600;
 }
