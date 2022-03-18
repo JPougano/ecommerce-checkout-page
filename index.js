@@ -68,37 +68,41 @@ const closeBtn = document.querySelector('.close__icon');
 // Js de criação do menu de checkout
 
     const sectionDropDownMenu = document.querySelector('.nav__checkout__dropdown');
-
+    const emptyCart = document.querySelector('.empty__cart___div');
+    const filledCart = document.querySelector('.filled__cart___div');
 
     submitCart.addEventListener("click",function(){
 
         var valorTotal = (contador * 125.00);
+        const totalItems = document.querySelector('.dropdown__items');
+        const valorTotalItems = document.querySelector('.dropdown__destaque');
 
-        sectionDropDownMenu.innerHTML = `
-            <h4 class="dropdown__menu___title">Cart</h4>
-            <hr>
-            <div class="dropdown__menu___content">
-            <img class="dropdown__menu___img" src="./images/image-product-1.jpg" alt="cart item checkout" >
-            <div class="dropdown__menu___textcontent">
-                <p>Fall Limited Edition Sneakers</p>
-                <p>$125,00 x <span>${contador}</span><span class="dropdown__destaque"> $${valorTotal},00</span> </p>
-            </div>
-            <img class="dropdown__menu___delete" src="./images/icon-delete.svg" alt="delete item">
-            </div>
-            <button class="dropdown__menu___button">checkout</button>
-        `     
-    });
+        totalItems.innerHTML = contador + ' ';
+        valorTotalItems.innerHTML = '$' + valorTotal + ',00';
 
+        if(contador > 0){
+            emptyCart.classList.add('hidden');
+            filledCart.classList.remove('hidden');
+    }else{
+        cartAmout.innerHTML = null;
+    }
+    
+});
 
 
+// Faz o menu do carrinho abrir e fechar
     const cartIcon = document.querySelector('.cart__logo');
     cartIcon.addEventListener("click",function(){
-        sectionDropDownMenu.classList.toggle('dropdown__hidden')
-        console.log('oi');
+        sectionDropDownMenu.classList.toggle('hidden')
     });
+   
+// Limpa o carrinho quando você clica na lixeira 
+const trash = document.querySelector('.dropdown__menu___delete');
 
-
-
-
-    
-
+trash.addEventListener("click",function(){
+    emptyCart.classList.toggle('hidden');
+    filledCart.classList.toggle('hidden');
+    cartAmout.innerHTML = null;
+    contador = 0;
+    itens.innerHTML = 0;
+})
